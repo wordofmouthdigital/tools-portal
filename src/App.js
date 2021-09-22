@@ -30,11 +30,21 @@ class App extends Component {
   }
 
   render() {
+    const checkLogin = () => {
+      if (!!this.state.user) {
+        return (
+          <>
+            <img src={logo} className="App-logo" alt="logo" />
+            <MarketingCalculator />
+          </>
+        );
+      }
+      return <a onClick={this.handleLogIn}>Welcome to Word of Mouth Digital Marketing Tools</a>;
+    }
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <MarketingCalculator />
+          { checkLogin() }
         </header>
       </div>
     )
