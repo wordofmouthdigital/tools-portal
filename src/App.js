@@ -39,7 +39,7 @@ class App extends Component {
           </>
         );
       }
-      return <a onClick={this.handleLogIn}>Welcome to Word of Mouth Digital Marketing Tools</a>;
+      return <div onClick={this.handleLogIn}>Welcome to Word of Mouth Digital Marketing Tools</div>;
     }
     return (
       <div className="App">

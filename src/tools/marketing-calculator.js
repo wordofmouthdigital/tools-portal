@@ -21,7 +21,7 @@ export const MarketingCalculator = () => {
   const revenue = totalSales * aov;
   const tCogs = totalSales * cogs
   const profit = revenue - (tCogs + adspend + aspend + cspend);
-  const roas = revenue / adspend;
+  // const roas = revenue / adspend;
 
   console.log(impressions, users, totalSales, revenue, profit)
 
@@ -58,6 +58,7 @@ export const MarketingCalculator = () => {
       <Input value={ adspend } handleChange={ setAdspend } label={ "Monthly Adspend" } type={ "number" }  />
       <Input value={ cpc } handleChange={ setCpc } label={ "CPC" } type={ "number" }  />
       <Input value={ cpm } handleChange={ setCpm } label={ "CPM" } type={ "number" }  />
+      <Input value={ ctr } handleChange={ setCtr } label={ "CTR" } type={ "number" }  />
       <Input value={ cr } handleChange={ setCr } label={ "CR" } type={ "number" }  />
       <Input value={ cspend } handleChange={ setCspend } label={ "CSpend" } type={ "number" }  />
       <Input value={ aspend } handleChange={ setAspend } label={ "ASpend" } type={ "number" }  />
