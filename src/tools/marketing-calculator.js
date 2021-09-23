@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import { Input } from "../components/Input"
-import BarChart from "../components/BarChart"
+import { Input } from "../components/input"
+import BarChart from "../components/bar-chart"
 
 export const MarketingCalculator = () => {
   

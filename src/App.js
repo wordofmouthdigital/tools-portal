@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import netlifyIdentity from "netlify-identity-widget";
 import logo from "./logo.svg"
 import "./App.css"
-import { MarketingCalculator } from "./tools/MarketingCalculator"
-import { loginUser, logoutUser } from "./identityActions";
+import { MarketingCalculator } from "./tools/marketing-calculator"
+import { loginUser, logoutUser } from "./identity-actions";
 
 class App extends Component {
   state = {user: null};
